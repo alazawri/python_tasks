@@ -17,5 +17,5 @@ student_2 = {
 students = {'student_1': student_1, 'student_2': student_2}
 
 
-for student in students.values():
-  print(student)
+for s, student in students.items():
+  print(f"Name: {student['Name']}. Attendance: {student['Attendance']}")
